@@ -4,12 +4,18 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const pool = require("./config/db");
 
+// const { insertMockData } = require('./path-to-your-file');
+
+// insertMockData();
+
 
 app.use(cors());
 app.use(express.json());
 
 
 dotenv.config();
+
+
 
 app.get('/',(req,res)=>{
     res.json("Hello");
